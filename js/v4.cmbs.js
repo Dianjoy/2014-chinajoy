@@ -414,13 +414,9 @@
         var infoWindow1 = new BMap.InfoWindow("浦东新区陆家嘴环球金融中心93楼");
         marker1.addEventListener("click", function(){this.openInfoWindow(infoWindow1);});
     })
-    $('#user').keydown(function(e){
-         if (e.keyCode === 13) {
+      $('.form').on('submit',function(e){  
+        if( $('#user').is(':focus')){
             $('#company').focus();
-            return false;   
-        };
+            return false; 
+        }
     })
-    //   $('#user').on('submit',function(e){  
-    //        $('#company').focus();
-    //         return false; 
-    // })
