@@ -407,7 +407,7 @@
     }
         
         var map = new BMap.Map("map");            // 创建Map实例
-        map.centerAndZoom(new BMap.Point(121.514209,31.239462),16);  //初始化时，即可设置中心点和地图缩放级别。
+        map.centerAndZoom(new BMap.Point(121.5082,31.244),16);  //初始化时，即可设置中心点和地图缩放级别。
         map.enableScrollWheelZoom();
         map.enableContinuousZoom();
         map.enableContinuousZoom();    // 开启连续缩放效果
