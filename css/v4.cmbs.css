@@ -396,22 +396,24 @@
     width: 70%;
     margin: 0 0 0 15%;
 }
-.form p{
+.form label{
     color: white;
     font-size: 16px;
     margin: 3% 0;
+    display: block;
 }
 .form input,.form textarea{
     display: inline-block;
-    width:90% ;
+    width:95% ;
     border: none;
     border-radius: 5px;
     background-color: rgba(255,255,255,0.3);
-    padding: 0 5%;
-    font-size: 1.2rem ;
+    padding: 0 5px;
+    font-size: 1rem ;
+    color: white;
 }
 .form textarea{
-    padding: 2% 5%;
+    padding: 5px 5px;
 }
 .form input{
     height: 40px;

@@ -8,8 +8,10 @@
 <meta name="format-detection" content="address=no" />
 <meta name="format-detection" content="telephone=no" />
 <meta name="copyright" content="Copyright (c) dianjoy.com" />
+<link rel="shortcut icon" type="image/png" href="http://www.dianjoy.com/wp-content/themes/dian2013/img/logo.png">
 <link rel="stylesheet" href="css/v4.main.css" type="text/css" />
 <link rel="stylesheet" href="css/v4.cmbs.css" type="text/css" />
+
 </head>
 
 <body class="bodyCMBS">
@@ -37,10 +39,10 @@
         <div class="form">
             <form action="submit_csv.php" method="post">
                 <div class ='close'></div>
-                <p>姓名</p>
-                <input type="text" name="name" required autofocus maxlength='10' style="color:white">
-                <p>公司&职务</p>
-                <textarea name="information" id="" cols="30" rows="4" maxlength="50" style="color:white"></textarea>
+                <label for="user">姓名</label>
+                <input type="text" name="name" required autofocus maxlength='10' id="user">
+                <label for="company">公司&职务</label>
+                <textarea name="information" id="company" cols="30" rows="4" maxlength="50"></textarea>
                 <button class="sure">确认</button>
             </form>
         </div>
