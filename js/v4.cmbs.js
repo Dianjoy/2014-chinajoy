@@ -296,7 +296,7 @@
                         f.css(K.transition, K.cssVendor + "transform 0").hide();
                         h();
                     }).css(K.transform, "translate(0,0)");
-                    f.css(K.transform, "perspective(500px) rotateX(-20deg)");
+                    f.css(K.transform, "perspective(500px) rotateX(0deg)");
                 }, 10); else {
                     c = d.eq(e).css("z-index", 5);
                     f = d.eq(a);
@@ -332,10 +332,10 @@
                     s = a.pos;
                     if (m && (s.y != l.y || p)) q = s.y - l.y, 0 < q ? 0 < e && (p = !0, d[e - 1].style[K.transform] = "translate(0,-" + (v - q) + "px)", 
                     d[e - 1].style.zIndex = 5, d[e - 1].style.display = "block", d[e + 1] && (d[e + 1].style.display = "none", 
-                    d[e + 1].style[K.transform] = "translate(0,0)"), m.style.zIndex = "auto", m.style[K.transform] = "translate(0,0) perspective(500px) rotateX(" + 20 * (1 - Math.max(1, 2 * q / v)) + "deg)") : e < n - 1 && (p = !0, 
+                    d[e + 1].style[K.transform] = "translate(0,0)"), m.style.zIndex = "auto", m.style[K.transform] = "translate(0,0)" ) : e < n - 1 && (p = !0, 
                     m.style[K.transform] = "translate(0," + q + "px)", m.style.zIndex = 5, d[e - 1] && (d[e - 1].style[K.transform] = "translate(0,0)", 
-                    d[e - 1].style.zIndex = "auto", d[e - 1].style.display = "none"), d[e + 1].style.display = "block", 
-                    d[e + 1].style[K.transform] = "perspective(500px) rotateX(" + 20 * (-1 + Math.min(1, 2 * -q / v)) + "deg)");
+                    d[e - 1].style.zIndex = "auto", d[e - 1].style.display = "none"), d[e + 1].style.display = "block"
+                     );
                     return !1;
                 },
                 "touchend touchcancel": function(a) {
@@ -402,10 +402,7 @@
     }else{
          $('#map').toggle().toggleClass('map1');
         $('.mapup').css('webkitTransform','translate(0,0)')
-       
-
     }
-        
         var map = new BMap.Map("map");            // 创建Map实例
         map.centerAndZoom(new BMap.Point(121.5082,31.244),16);  //初始化时，即可设置中心点和地图缩放级别。
         map.enableScrollWheelZoom();
@@ -417,3 +414,13 @@
         var infoWindow1 = new BMap.InfoWindow("浦东新区陆家嘴环球金融中心93楼");
         marker1.addEventListener("click", function(){this.openInfoWindow(infoWindow1);});
     })
+    $('#user').keydown(function(e){
+         if (e.keyCode === 13) {
+            $('#company').focus();
+            return false;   
+        };
+    })
+    //   $('#user').on('submit',function(e){  
+    //        $('#company').focus();
+    //         return false; 
+    // })
