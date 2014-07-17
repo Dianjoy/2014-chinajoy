@@ -143,7 +143,7 @@
     font-size:24px;
     color:#858585;
     display:none;
-	padding-top:40px;
+	padding-top:15px;
     font-family:helvetica-light;
 }
 #cmbssmall .feather{
@@ -166,7 +166,6 @@
     position:absolute;
     width:300px;
     height:300px;
-    top:400px;
     left:45%;
     margin-left:-385px;
     display:none;
@@ -649,10 +648,10 @@
     font-size:18px;
 }
 #cmbssmall .feather{
-    top:300px;
+    bottom: 0;
 }
 #cmbssmall .water{
-    top:270px;
+    bottom: -20px;
 }
 #cmbsfast .title{
     top:160px;
@@ -765,9 +764,8 @@
 }
 .canTouch .cmbspage .content{
     position:relative;
-    height:400px !important;
-    top:50%;
-    margin-top:-200px;
+    top:5%;
+    
 }
 #cmbsbanner{
     top:0;
