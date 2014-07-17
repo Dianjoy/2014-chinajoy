@@ -3,7 +3,7 @@
 	$information=$_POST['information'];
 
 	if ($name && $information){
-		$myfile = fopen("information.csv", "a") or die("Unable to open file!");
+		$myfile = fopen("developer_information.csv", "a") or die("Unable to open file!");
 		$name = $name . ",";
 		fwrite($myfile, $name);
 		$information = $information . "\r\n";
