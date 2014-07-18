@@ -452,6 +452,10 @@
 .aniu{
     -webkit-animation : floatu 1.5s linear 0s infinite;
 }
+.time{
+    font-size: 18px !important;
+}
+
 @-webkit-keyframes floatd{
     0%{
         -webkit-transform: translate(0,0px);
@@ -520,7 +524,7 @@
 }
 .bt{
     position: absolute;
-    bottom: 10%;
+    bottom: 20%;
     left: 50%;
     margin-left: -106px;
 }
