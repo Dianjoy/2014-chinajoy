@@ -941,3 +941,9 @@
 	0%{transform:rotate(0)}
 	100%{transform:rotate(360deg);}
 }
+
+@media (max-height: 506px){
+    .bt{
+        bottom: 10%;
+    }
+}
