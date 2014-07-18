@@ -9,7 +9,7 @@
 		$information = $information . "\r\n";
 		fwrite($myfile, $information);
 		fclose($myfile);
-					header('Location:success.html');
+					header('Location:success_developer.html');
 							  }
 							else 
 								{
