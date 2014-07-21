@@ -351,7 +351,7 @@
                 "click": function(a) {
 
                     
-                    sss.style.webkitTransform = "translate(0,-1px)";
+                    sss.style.webkitTransform = "translate(0,-100%)";
                     // sss.style.display = "none";
                     kkk.style.webkitTransform = "translate(0,0)";
                     kkk.style.display = "block";
@@ -392,31 +392,37 @@
         
     });
 })();
-    $('.eight').on('click',function(){
-        $(this).toggleClass('clicked');
-        if($(this).hasClass('clicked')){
-            $('.mapup').css('webkitTransform','translate(0,-45%)');
-        setTimeout(function(){
-            $('#map').toggle().toggleClass('map1');
-        },1000)
-    }else{
-         $('#map').toggle().toggleClass('map1');
-        $('.mapup').css('webkitTransform','translate(0,0)')
-    }
-        var map = new BMap.Map("map");            // 创建Map实例
-        map.centerAndZoom(new BMap.Point(121.5082,31.244),16);  //初始化时，即可设置中心点和地图缩放级别。
-        map.enableScrollWheelZoom();
-        map.enableContinuousZoom();
-        map.enableContinuousZoom();    // 开启连续缩放效果
-        map.enableInertialDragging();　// 开启惯性拖拽效果
-        var marker1 = new BMap.Marker(new BMap.Point(121.514209,31.239462));  // 创建标注
-        map.addOverlay(marker1);              // 将标注添加到地图中
-        var infoWindow1 = new BMap.InfoWindow("浦东新区陆家嘴环球金融中心93楼");
-        marker1.addEventListener("click", function(){this.openInfoWindow(infoWindow1);});
-    })
-      $('.form').on('submit',function(e){  
-        if( $('#user').is(':focus')){
-            $('#company').focus();
-            return false; 
-        }
-    })
+
+$('.eight').on('click',function(){
+    $(this).toggleClass('clicked');
+    if($(this).hasClass('clicked')){
+        $('.mapup').css('webkitTransform','translate(0,-45%)');
+    setTimeout(function(){
+        $('#map').toggle().toggleClass('map1');
+    },1000)
+}else{
+     $('#map').toggle().toggleClass('map1');
+    $('.mapup').css('webkitTransform','translate(0,0)')
+}
+    var map = new BMap.Map("map");            // 创建Map实例
+    map.centerAndZoom(new BMap.Point(121.5082,31.244),16);  //初始化时，即可设置中心点和地图缩放级别。
+    map.enableScrollWheelZoom();
+    map.enableContinuousZoom();
+    map.enableContinuousZoom(); // 开启连续缩放效果
+    map.enableInertialDragging(); // 开启惯性拖拽效果
+    var marker1 = new BMap.Marker(new BMap.Point(121.514209,31.239462));  // 创建标注
+    map.addOverlay(marker1);              // 将标注添加到地图中
+    var infoWindow1 = new BMap.InfoWindow("浦东新区陆家嘴环球金融中心93楼");
+    marker1.addEventListener("click", function(){this.openInfoWindow(infoWindow1);});
+});
+
+$('.form').on('submit', function (){
+  if($('#user').val() === '') {
+    $('#user').focus();
+    return false;
+  }
+  if ($('#company').val() === '') {
+    $('#company').focus();
+    return false;
+  }
+});

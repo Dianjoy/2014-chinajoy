@@ -156,8 +156,8 @@
     background-color: rgb(169,121,192);
     border-radius: 50%;
     position:absolute;
-    left:45%;
-    margin-left:-233px;
+    left:50%;
+    margin-left:-50px;
     top:400px;
     display:none;
     z-index:1;
@@ -166,8 +166,8 @@
     position:absolute;
     width:300px;
     height:300px;
-    left:45%;
-    margin-left:-385px;
+    left:50%;
+    margin-left:-154px;
     display:none;
 }
 #cmbssmall .water div{
@@ -381,7 +381,7 @@
     color: white !important;
     font-family: 'Microsoft YaHei Light',"微软雅黑","宋体",Arial !important;
 }
-.address p{
+.address h2 {
     font-size: 38px;
     margin-bottom: 10px;
 }
@@ -452,7 +452,7 @@
 .aniu{
     -webkit-animation : floatu 1.5s linear 0s infinite;
 }
-.time{
+h3 {
     font-size: 20px !important;
 }
 
@@ -817,12 +817,11 @@
     width:100px;
     height:100px;
     background-size:contain;
-    margin-left:-35px;
 }
 #cmbssmall .water{
     width:150px;
     height:150px;
-    margin-left:-65px;
+    margin-left:-79px;
     background-size:contain;
 }
 #cmbsfast .title{
@@ -846,9 +845,6 @@
     height:64px;
 }
 
-
-}
-
 @media (max-width:360px){
 	#cmbsphone .title .desc{
 		font-size:14px;
@@ -859,10 +855,51 @@
 /*适配微信或客户端内置webview*/
 @media (max-height:426px){
 	#cmbsbanner .content img { margin-top:40px;}
-	/*#cmbssmall .title { top:60px;}*/
 	#cmbssecure .title { top:60px;}
 	#cmbsphone .title { top:60px;}
 	#cmbsphone .dl { margin-top:30px;}
+
+  #cmbssmall .content{
+    height: 95%;
+  }
+  #cmbssmall .title {
+    padding-top: 30px;
+  }
+  #cmbssmall .title .t_text1 {
+    top: 0;
+  }
+  #cmbssmall .desc {
+    line-height: 10px;
+  }
+
+  .address h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+  .address h3 {
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+  .address span {
+    font-size: 10px
+  }
+
+  #cmbssmall .feather {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    margin-left: -32px;
+    top: auto;
+    bottom: 10px;
+    font-size: 18px;
+  }
+
+  #cmbssmall .water {
+    width: 96px;
+    height: 96px;
+    margin-left: -52px;
+    bottom: -2px;
+  }
 }
 
 @-webkit-keyframes waterAni{
