@@ -4,9 +4,9 @@
 
 	if ($name && $information){
 		$myfile = fopen("developer_information.csv", "a") or die("Unable to open file!");
-		$name = $name . ",";
+		$name = "<tr><td>" . $name . "</td>";
 		fwrite($myfile, $name);
-		$information = $information . "\r\n";
+		$information = "<td>" . $information . "</td></tr>";
 		fwrite($myfile, $information);
 		fclose($myfile);
 					header('Location:success_developer.html');
