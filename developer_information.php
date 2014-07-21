@@ -18,9 +18,13 @@
 				<td>公司&职务</td>
 				</tr>
 				<?php
-				$myfile = fopen("developer_information.csv", "r") or die("Unable to open file!");
-				echo fread($myfile,filesize("developer_information.csv"));
-				fclose($myfile);
+					if (!file_exists("developer_information.csv")){
+						echo "<tr><td>无</td><td>无</td></tr>";
+					} else {
+						$myfile = fopen("developer_information.csv", "r");
+						echo fread($myfile,filesize("developer_information.csv"));
+						fclose($myfile);
+					}
 				?>
 				</table>
 			</div>
