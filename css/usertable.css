@@ -4,45 +4,27 @@ body {
   background-color: #eee;
 }
 
-.panel-primary {
-  border-color: #428bca;
+.panel-success {
+  border-color: #47a447;
 }
 
-.panel-primary > .panel-heading {
+.panel-success > .panel-heading {
   color: #ffffff;
-  background-color: #428bca;
-  border-color: #428bca;
+  background-color: #47a447;
+  border-color: #47a447;
 }
 
-.panel-primary > .panel-heading + .panel-collapse .panel-body {
-  border-top-color: #428bca;
+.panel-success > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: #47a447;
 }
 
-.panel-primary > .panel-footer + .panel-collapse .panel-body {
-  border-bottom-color: #428bca;
+.panel-success > .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: #47a447;
 }
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   color: #ffffff;
   text-decoration: none;
-  background-color: #4428bca;
-}
-
-.table > thead > tr > .primary,
-.table > tbody > tr > .primary,
-.table > tfoot > tr > .primary,
-.table > thead > .primary > td,
-.table > tbody > .primary > td,
-.table > tfoot > .primary > td,
-.table > thead > .primary > th,
-.table > tbody > .primary > th,
-.table > tfoot > .primary > th {
-  background-color: #dff0d8;
-}
-
-.table-hover > tbody > tr > .primary:hover,
-.table-hover > tbody > .primary:hover > td,
-.table-hover > tbody > .primary:hover > th {
-  background-color: #d0e9c6;
+  background-color: #47a447;
 }
