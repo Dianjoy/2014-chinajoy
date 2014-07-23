@@ -44,6 +44,19 @@
 		</div>
 		<div style="text-align:center">
 			<button type="button" class="btn  btn-success" onclick="location.href='http://www.dianjoy.com/2014cj/user_table.csv'">下载统计表</button>
+			<button type="button" class="btn  btn-primary" >总人数：
+				<?php
+					$flie = fopen( 'user_table.csv', 'r' );
+					$i = 0;
+					while( !feof( $flie ) )
+					{
+					fgets( $flie );
+					$i++;
+					}
+					fclose( $flie );
+					echo $i;
+				?>
+			</button>
 		</div>
 	</div>
 </body>
