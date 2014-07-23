@@ -32,7 +32,6 @@
 						$str2 = str_ireplace("</td><td>",",",$str1);
 						$str3 = str_ireplace("<tr><td>", "", $str2);
 						$str4 = str_ireplace("</td></tr>", "", $str3);
-						$str4 = iconv("utf-8", "gb2312", $str4);
 						fwrite($table, $str4);
 						fclose($table);
 					}

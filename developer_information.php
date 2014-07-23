@@ -25,16 +25,13 @@
 						echo fread($myfile,filesize("developer_information.csv"));
 						fclose($myfile);
 
-						$myfile = fopen("developer_information.csv", "r");
-						$info = fread($myfile,filesize("developer_information.csv"));
-						fclose($myfile);
+						$info = file_get_contents("developer_information.csv");
 
 						$table = fopen("developer_table.csv","w");
 						$str1 = str_ireplace("</td></tr><tr><td>", "\r\n", $info);
 						$str2 = str_ireplace("</td><td>",",",$str1);
 						$str3 = str_ireplace("<tr><td>", "", $str2);
 						$str4 = str_ireplace("</td></tr>", "", $str3);
-						$str4 = iconv("utf-8", "gb2312", $str4);
 						fwrite($table, $str4);
 						fclose($table);
 					}
