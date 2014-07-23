@@ -25,9 +25,7 @@
 						echo fread($myfile,filesize("user_information.csv"));
 						fclose($myfile);
 						
-						$myfile = fopen("user_information.csv", "r");
-						$info = fread($myfile,filesize("user_information.csv"));
-						fclose($myfile);
+						$info = file_get_contents("user_information.csv");
 
 						$table = fopen("user_table.csv","w");
 						$str1 = str_ireplace("</td></tr><tr><td>", "\r\n", $info);
