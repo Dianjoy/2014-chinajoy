@@ -15,12 +15,12 @@
 <body>
 <section id="wrapper">
   <div id="front">
-    <div class="next animationdown">
+    <div class="next animation-down">
       <img src="images/deti.png" alt="详情" width="100%"/>
     </div>
   </div>
   <div id="end">
-    <div class="up animationup">
+    <div class="up animation-up">
       <img src="images/up.png" alt="向上">
     </div>
     <div class="content">
@@ -46,7 +46,7 @@
         Parrot AR.Drone2.0二代飞行器
       </p>
 
-      <div class="join"><span>参加</span></div>
+      <p class="join">参加</p>
       <div class="water">
         <div></div>
         <div></div>
@@ -67,10 +67,9 @@
   </div>
 </section>
 
-
-<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="js/dianjoy.js"></script>
-<script type="text/javascript">
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/dianjoy.js"></script>
+<script>
   document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
     WeixinJSBridge.call('hideToolbar');
   });
