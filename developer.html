@@ -1,152 +1,140 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>ChinaJoy 点乐 Developer Crazy Nights 邀请函</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui" />
-  <meta name="format-detection" content="email=no" />
-  <meta name="format-detection" content="address=no" />
-  <meta name="format-detection" content="telephone=no" />
-  <meta name="copyright" content="Copyright (c) dianjoy.com" />
-  <link rel="shortcut icon" type="image/png" href="http://www.dianjoy.com/wp-content/themes/dian2013/img/logo.png">
-  <link rel="stylesheet" href="css/css.css" type="text/css" />
-</head>
-<style>
-  #front{
-      background:url("images/backd.jpg") center center no-repeat;
-      background-size: cover;
-  }
-  @media (max-width: 420px){
-      .top{
-          margin: 60px auto 14px;
-      }
-  }
-  @media (min-width:360px) {
-      .top{
-          margin: 120px auto 14px;
-      }
-  }
-</style>
+<meta charset="utf-8">
+<title>ChinaJoy 点乐 Developer Crazy Nights 邀请函</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui" />
+<meta name="format-detection" content="email=no" />
+<meta name="format-detection" content="address=no" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="copyright" content="Copyright (c) dianjoy.com" />
+<link rel="shortcut icon" type="image/png" href="http://www.dianjoy.com/wp-content/themes/dian2013/img/logo.png">
+<link rel="stylesheet" href="css/css.css" type="text/css" />
 <body>
   <section id="wrap">
-      <div id="front" class="front">
-          <div class="next anid">
-              <img src="images/deti.png" alt="" width="100%"/>
-          </div>
+    <div id="front" class="front front-developer">
+      <div class="next anid">
+        <img src="images/deti.png" alt="详情" width="100%"/>
       </div>
-      <div id="end">
-          <div class="up aniu">
-              <img src="images/up.png" alt="">
-          </div>
-          <div class="content">
-              <div class="top">
-                  <img src="images/invite.png" alt=""  class="circle"/>
-                  <img src="images/date.png" alt="" class="date"/>
-              </div>
-              <h2 class="hotel">上海柏悦酒店</h2>
-              <p class="address">
-                  浦东新区陆家嘴环球金融中心93楼
-                  <br/>
-                  （电梯坐到91楼转电梯到93楼）
-              </p>
-              <div class="join">参加</div>
-              <div class="water"><div></div><div></div><div></div><div></div></div>
-          </div>
-          <div class="form">
-            <div class ='close'></div>
-            <form action="submit_csv.php" method="post">
-                <label for="user">姓名</label>
-                <input type="text" name="name" required autofocus maxlength='10' id="user">
-                <label for="company">公司&职务</label>
-                <input type="text" name="information" id="company" maxlength="50">
-                <button class="sure">确认</button>
-            </form>
-          </div>
+    </div>
+    <div id="end">
+      <div class="up aniu">
+        <img src="images/up.png" alt="">
       </div>
+      <div class="content">
+        <div class="top top-developer">
+          <img src="images/invite.png" alt="点乐邀请您" class="circle"/>
+          <img src="images/date.png" alt="2014年7月30 17:00-22:10" class="date"/>
+        </div>
+        <h2 class="hotel">上海柏悦酒店</h2>
+
+        <p class="address">
+          浦东新区陆家嘴环球金融中心93楼
+          <br/>
+          （电梯坐到91楼转电梯到93楼）
+        </p>
+        <div class="join join-developer">参加</div>
+        <div class="water">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div class="form">
+        <div class="close"></div>
+        <form action="submit_csv.php" method="post">
+          <label for="user">姓名</label>
+          <input type="text" name="name" required autofocus maxlength="10" id="user">
+          <label for="company">公司&职务</label>
+          <input type="text" name="information" id="company" maxlength="50">
+          <button class="sure">确认</button>
+        </form>
+      </div>
+    </div>
   </section>
-<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="js/dianjoy.js"></script>
-<script type="text/javascript">
-    document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
-      WeixinJSBridge.call('hideToolbar');
-      });
-      var dataForWeixin={
-      appId:  "",
-      img_width :     "200",
-      img_height :    "200",
-      img:            "http://www.dianjoy.com/2014cj/images/share.jpg",
-      url:            "http://www.dianjoy.com/2014cj/index.html",
-      title:          $('title').html(),
-      desc:           '诚挚邀请您7月30日19:00环球金融中心参加 2014ChinaJoy点乐 Developer Crazy Nights'
+  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/dianjoy.js"></script>
+  <script type="text/javascript">
+    document.addEventListener("WeixinJSBridgeReady", function onBridgeReady() {
+      WeixinJSBridge.call("hideToolbar");
+    });
+    var dataForWeixin = {
+      appId: "",
+      img_width: "200",
+      img_height: "200",
+      img: "http://www.dianjoy.com/2014cj/images/share.jpg",
+      url: "http://www.dianjoy.com/2014cj/index.html",
+      title: $("title").html(),
+      desc: "诚挚邀请您7月30日19:00环球金融中心参加 2014ChinaJoy点乐 Developer Crazy Nights"
     };
 
-    function onWxBridgeReady(){
+    function onWxBridgeReady() {
       // 发送给好友;
-      WeixinJSBridge.on('menu:share:appmessage', function(argv){
-      WeixinJSBridge.invoke('sendAppMessage',{
-      "appid":        dataForWeixin.appId,
-      "img_url":      dataForWeixin.img,
-      "img_width":    dataForWeixin.img_width,
-      "img_height":   dataForWeixin.img_height,
-      "link":         dataForWeixin.url,
-      "desc":         dataForWeixin.desc,
-      "title":        dataForWeixin.title
-    },
-    function(res){
-      WeixinJSBridge.log(res.err_msg);
+      WeixinJSBridge.on("menu:share:appmessage", function (argv) {
+        WeixinJSBridge.invoke("sendAppMessage", {
+              "appid": dataForWeixin.appId,
+              "img_url": dataForWeixin.img,
+              "img_width": dataForWeixin.img_width,
+              "img_height": dataForWeixin.img_height,
+              "link": dataForWeixin.url,
+              "desc": dataForWeixin.desc,
+              "title": dataForWeixin.title
+            },
+            function (res) {
+              WeixinJSBridge.log(res.err_msg);
+            });
       });
-    });
 
-    // 分享到朋友圈;
-    WeixinJSBridge.on('menu:share:timeline', function(argv){
-      WeixinJSBridge.invoke('shareTimeline',{
-      "img_url":dataForWeixin.img,
-      "img_width":    dataForWeixin.img_width,
-      "img_height":   dataForWeixin.img_height,
-      "link":         dataForWeixin.url,
-      "desc":         dataForWeixin.desc,
-      "title":        dataForWeixin.title
-    },
-    function(res){
-      WeixinJSBridge.log(res.err_msg);
-      });
+      // 分享到朋友圈;
+      WeixinJSBridge.on("menu:share:timeline", function (argv) {
+        WeixinJSBridge.invoke("shareTimeline", {
+              "img_url": dataForWeixin.img,
+              "img_width": dataForWeixin.img_width,
+              "img_height": dataForWeixin.img_height,
+              "link": dataForWeixin.url,
+              "desc": dataForWeixin.desc,
+              "title": dataForWeixin.title
+            },
+            function (res) {
+              WeixinJSBridge.log(res.err_msg);
+            });
       });
       // 分享到微博;
-      WeixinJSBridge.on('menu:share:weibo', function(argv){
-      WeixinJSBridge.invoke('shareWeibo',{
-      "content":      dataForWeixin.title + ' ' + dataForWeixin.url,
-      "url":          dataForWeixin.url
-    },
-    function(res){
-      WeixinJSBridge.log(res.err_msg);
+      WeixinJSBridge.on("menu:share:weibo", function (argv) {
+        WeixinJSBridge.invoke("shareWeibo", {
+              "content": dataForWeixin.title + " " + dataForWeixin.url,
+              "url": dataForWeixin.url
+            },
+            function (res) {
+              WeixinJSBridge.log(res.err_msg);
+            });
       });
-    });
-    // 分享到Facebook
-    WeixinJSBridge.on('menu:share:facebook', function(argv){
-      WeixinJSBridge.invoke('shareFB',{
-      "img_url":      dataForWeixin.img,
-      "img_width":    dataForWeixin.img_width,
-      "img_height":   dataForWeixin.img_height,
-      "link":         dataForWeixin.url,
-      "desc":         dataForWeixin.desc,
-      "title":        dataForWeixin.title
-      },
-      function(res){
-          WeixinJSBridge.log(res.err_msg);
-          });
+      // 分享到Facebook
+      WeixinJSBridge.on("menu:share:facebook", function (argv) {
+        WeixinJSBridge.invoke("shareFB", {
+              "img_url": dataForWeixin.img,
+              "img_width": dataForWeixin.img_width,
+              "img_height": dataForWeixin.img_height,
+              "link": dataForWeixin.url,
+              "desc": dataForWeixin.desc,
+              "title": dataForWeixin.title
+            },
+            function (res) {
+              WeixinJSBridge.log(res.err_msg);
+            });
       });
     }
 
-    if(typeof WeixinJSBridge == "undefined"){
-      if(document.addEventListener){
-      document.addEventListener("WeixinJSBridgeReady", onWxBridgeReady, false);
-      }else if(document.attachEvent){
-      document.attachEvent("WeixinJSBridgeReady", onWxBridgeReady);
-      document.attachEvent("onWeixinJSBridgeReady", onWxBridgeReady);
+    if (typeof WeixinJSBridge == "undefined") {
+      if (document.addEventListener) {
+        document.addEventListener("WeixinJSBridgeReady", onWxBridgeReady, false);
+      } else if (document.attachEvent) {
+        document.attachEvent("WeixinJSBridgeReady", onWxBridgeReady);
+        document.attachEvent("onWeixinJSBridgeReady", onWxBridgeReady);
       }
-      }else{
+    } else {
       onWxBridgeReady();
     }
-</script>
-</body>
+  </script>
+  </body>
 </html>
