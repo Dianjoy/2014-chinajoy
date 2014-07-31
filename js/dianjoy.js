@@ -107,7 +107,7 @@ $(function () {
             }
         });
     });
-    $('.eight').on('click', function () {
+    $('.viewmap').on('click', function () {
         $(this).toggleClass('clicked');
         if ($(this).hasClass('clicked')) {
             $('.mapup').css('webkitTransform', 'translate(0,-45%)');

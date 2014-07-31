@@ -43,6 +43,9 @@ a img,
 img {
     border: none;
 }
+h3{
+    color: white;
+}
 
 /*user.html developer.html*/
 
@@ -269,6 +272,7 @@ img {
 }
 .phone{
     margin: 10px 0;
+    color: white;
 }
 #map{
     width: 100%;
@@ -276,7 +280,7 @@ img {
     display: none;
     background-color: white;
 }
-.eight{
+.viewmap{
     margin-top: 20px;
 }
 .map1{
