@@ -28,7 +28,7 @@ body {
   font-size: 12px;
   line-height: 1.2;
   overflow-x: hidden;
-  font-family: 'Microsoft YaHei Light', "微软雅黑", "宋体", Arial;
+  font-family:  Arial,'Microsoft YaHei Light', "微软雅黑", "宋体";
 }
 
 a {
