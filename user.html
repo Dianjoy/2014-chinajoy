@@ -1,148 +1,146 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title> 2014 ChinaJoy 点乐·葡萄 开瓶器之夜 邀请函</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
-<meta name="format-detection" content="email=no" />
-<meta name="format-detection" content="address=no" />
-<meta name="format-detection" content="telephone=no" />
-<meta name="copyright" content="Copyright (c) dianjoy.com" />
-<link rel="shortcut icon" type="image/png" href="http://www.dianjoy.com/wp-content/themes/dian2013/img/logo.png">
-<link rel="stylesheet" href="css/v4.main.css" type="text/css" />
-<link rel="stylesheet" href="css/v4.cmbs.css" type="text/css" />
+  <head>
+    <meta charset="utf-8">
+    <title>ChinaJoy 点乐·葡萄 开瓶器之夜邀请函</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="copyright" content="Copyright (c) dianjoy.com" />
+    <link rel="shortcut icon" type="image/png" href="http://www.dianjoy.com/wp-content/themes/dian2013/img/logo.png">
+    <link rel="stylesheet" href="css/css.css" />
+  </head>
+  <body>
+      <section id="wrapper">
+          <div id="front">
+              <div class="next anid">
+                  <img src="images/deti.png" alt="" width="100%"/>
+              </div>
+          </div>
+          <div id="end">
+              <div class="up aniu">
+                  <img src="images/up.png" alt="">
+              </div>
+              <div class="content">
+                  <div class="top">
+                      <img src="images/invite.png"  class="circle"/>
+                      <img src="images/date.png" class="date"/>
+                  </div>
+                  <h2 class="hotel">上海柏悦酒店</h2>
+                  <p class="address">
+                      浦东新区陆家嘴环球金融中心93楼
+                      <br/>
+                      （电梯坐到91楼转电梯到93楼）
+                  </p>
+                  <h3 class="prize">- 奖品 -</h3>
+                  <p class="prizeframe">
+                      乐行SCVR1体感车<br/>
+                      B&O（BANG & OLUFSEN）红点大奖音响<br/>
+                      莱卡D-LUX6 Glossy相机<br/>
+                      BOSE音响<br/>
+                      Parrot AR.Drone2.0二代飞行器
+                  </p>
+                  <div class="join"><span>参加</span></div>
+                  <div class="water"><div></div><div></div><div></div><div></div></div>
+              </div>
+              <div class="form">
+                  <div class ='close'></div>
+                  <form action="submit_csv.php" method="post">
+                      <label for="user">姓名</label>
+                      <input type="text" name="name" autofocus maxlength='10' id="user" autocomplete="off">
+                      <label for="company">公司&职务</label>
+                      <input type="text" name="information" id="company" maxlength="50" autocomplete="off">
+                      <button class="sure">确认</button>
+                  </form>
+              </div>
+          </div>
+      </section>
 
-</head>
 
-<body class="bodyCMBS">
- <div class="cmbspage" id="cmbsbanner">
-        <!-- <div class="content">
-            <img src="images/title.png" class='titlen'/>
-        </div> -->
-     <div class="detail anid">
-         <img src="images/deti.png" alt="" width="50%"/>
-     </div>
-  </div>
-    <div class="cmbspage" id="cmbssmall">
-        <div class="up aniu">
-            <img src="images/up.png" alt="">
-        </div>
-         <div class="content join">
-            <div class="title clear">
-                <span class="t_text t_text1"><img src="images/invite.png" alt=""  width="100%"/></span>
-                <span class="t_mb"><img src="images/date.png" alt="" /></span>
-            </div>
-            <div class="desc address">
-                <h2>上海柏悦酒店</h2>
-                <span>浦东新区陆家嘴环球金融中心93楼</span><br>
-                <span>（电梯坐到91楼转电梯到93楼）</span><br><br>
-                <h3>－奖品－</h3>
-                <span>乐行SCVR1体感车</span><br>
-                <span>B&O（Bang & Olufsen）红点大奖音响</span><br>
-                <span>莱卡D-LUX6 Glossy相机</span><br>
-                <span>哈曼卡顿 Harmankardon GLA-55 钻石音箱</span><br>
-                <span>Parrot AR.Drone2.0二代飞行器</span>
-            </div>
-            <div class="feather">参加</div>
-            <div class="water"><div></div><div></div><div></div><div></div><div></div></div>
-        </div>  
-        <div class="form">
-            <form action="user_submit_csv.php" method="post">
-                <div class ='close'></div>
-                <label for="user">姓名</label>
-                <input type="text" name="name" required autofocus maxlength='10' id="user">
-                <label for="company">公司&职务</label>
-                <input type="text" name="information" id="company" maxlength="50">
-                <button class="sure">确认</button>
-            </form>
-        </div>
-    </div>
+  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/dianjoy.js"></script>
+  <script type="text/javascript">
+      document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+          WeixinJSBridge.call('hideToolbar');
+      });
+      var dataForWeixin={
+          appId:  "",
+          img_width :     "200",
+          img_height :    "200",
+          img:            "http://www.dianjoy.com/2014cj/images/share.jpg",
+          url:            "http://www.dianjoy.com/2014cj/index.html",
+          title:          $('title').html(),
+          desc:          '诚挚邀请您7月30日19:00环球金融中心参加 2014ChinaJoy点乐·葡萄开瓶器之夜'
+      };
 
+      function onWxBridgeReady(){
+          // 发送给好友;
+          WeixinJSBridge.on('menu:share:appmessage', function(argv){
+              WeixinJSBridge.invoke('sendAppMessage',{
+                          "appid":        dataForWeixin.appId,
+                          "img_url":      dataForWeixin.img,
+                          "img_width":    dataForWeixin.img_width,
+                          "img_height":   dataForWeixin.img_height,
+                          "link":         dataForWeixin.url,
+                          "desc":         dataForWeixin.desc,
+                          "title":        dataForWeixin.title
+                      },
+                      function(res){
+                          WeixinJSBridge.log(res.err_msg);
+                      });
+          });
 
-<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="js/common.min.js"></script>
-<script type="text/javascript" src="js/v4.cmbs.js"></script>
-<script type="text/javascript">
-document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
-      WeixinJSBridge.call('hideToolbar');
-});
-var dataForWeixin={
-            appId:  "",
-            img_width :     "200",
-            img_height :    "200",
-            img:            "http://www.dianjoy.com/2014cj/images/sharec.jpg",
-            url:            "http://www.dianjoy.com/2014cj/user.html",
-            title:          $('title').html(),
-            desc:           '诚挚邀请您7月30日19:00环球金融中心参加 2014ChinaJoy点乐·葡萄开瓶器之夜'
-        };
-        
-        function onWxBridgeReady(){
-            // 发送给好友;
-            WeixinJSBridge.on('menu:share:appmessage', function(argv){
-                    WeixinJSBridge.invoke('sendAppMessage',{
-                        "appid":        dataForWeixin.appId,
-                        "img_url":      dataForWeixin.img,
-                        "img_width":    dataForWeixin.img_width,
-                        "img_height":   dataForWeixin.img_height,
-                        "link":         dataForWeixin.url,
-                        "desc":         dataForWeixin.desc,
-                        "title":        dataForWeixin.title
-                    }, 
-                    function(res){
-                            WeixinJSBridge.log(res.err_msg);
-                    });
-            });
-                
-            // 分享到朋友圈;
-            WeixinJSBridge.on('menu:share:timeline', function(argv){
-                    WeixinJSBridge.invoke('shareTimeline',{
-                        "img_url":dataForWeixin.img,
-                        "img_width":    dataForWeixin.img_width,
-                        "img_height":   dataForWeixin.img_height,
-                        "link":         dataForWeixin.url,
-                        "desc":         dataForWeixin.desc,
-                        "title":        dataForWeixin.title
-                    }, 
-                    function(res){
-                        WeixinJSBridge.log(res.err_msg);
-                    });
-            });
-            // 分享到微博;
-            WeixinJSBridge.on('menu:share:weibo', function(argv){
-                    WeixinJSBridge.invoke('shareWeibo',{
-                        "content":      dataForWeixin.title + ' ' + dataForWeixin.url,
-                        "url":          dataForWeixin.url
-                    }, 
-                    function(res){
-                        WeixinJSBridge.log(res.err_msg);
-                    });
-            });
-            // 分享到Facebook
-            WeixinJSBridge.on('menu:share:facebook', function(argv){
-                    WeixinJSBridge.invoke('shareFB',{
-                        "img_url":      dataForWeixin.img,
-                        "img_width":    dataForWeixin.img_width,
-                        "img_height":   dataForWeixin.img_height,
-                        "link":         dataForWeixin.url,
-                        "desc":         dataForWeixin.desc,
-                        "title":        dataForWeixin.title
-                    }, 
-                    function(res){
-                        WeixinJSBridge.log(res.err_msg);
-                    });
-            });
-        }
-        
-if(typeof WeixinJSBridge == "undefined"){
-    if(document.addEventListener){
-        document.addEventListener("WeixinJSBridgeReady", onWxBridgeReady, false);
-    }else if(document.attachEvent){
-        document.attachEvent("WeixinJSBridgeReady", onWxBridgeReady);
-        document.attachEvent("onWeixinJSBridgeReady", onWxBridgeReady);
-    }
-}else{
-    onWxBridgeReady();
-}
-</script>
-</body>
+          // 分享到朋友圈;
+          WeixinJSBridge.on('menu:share:timeline', function(argv){
+              WeixinJSBridge.invoke('shareTimeline',{
+                          "img_url":dataForWeixin.img,
+                          "img_width":    dataForWeixin.img_width,
+                          "img_height":   dataForWeixin.img_height,
+                          "link":         dataForWeixin.url,
+                          "desc":         dataForWeixin.desc,
+                          "title":        dataForWeixin.title
+                      },
+                      function(res){
+                          WeixinJSBridge.log(res.err_msg);
+                      });
+          });
+          // 分享到微博;
+          WeixinJSBridge.on('menu:share:weibo', function(argv){
+              WeixinJSBridge.invoke('shareWeibo',{
+                          "content":      dataForWeixin.title + ' ' + dataForWeixin.url,
+                          "url":          dataForWeixin.url
+                      },
+                      function(res){
+                          WeixinJSBridge.log(res.err_msg);
+                      });
+          });
+          // 分享到Facebook
+          WeixinJSBridge.on('menu:share:facebook', function(argv){
+              WeixinJSBridge.invoke('shareFB',{
+                          "img_url":      dataForWeixin.img,
+                          "img_width":    dataForWeixin.img_width,
+                          "img_height":   dataForWeixin.img_height,
+                          "link":         dataForWeixin.url,
+                          "desc":         dataForWeixin.desc,
+                          "title":        dataForWeixin.title
+                      },
+                      function(res){
+                          WeixinJSBridge.log(res.err_msg);
+                      });
+          });
+      }
+
+      if(typeof WeixinJSBridge == "undefined"){
+          if(document.addEventListener){
+              document.addEventListener("WeixinJSBridgeReady", onWxBridgeReady, false);
+          }else if(document.attachEvent){
+              document.attachEvent("WeixinJSBridgeReady", onWxBridgeReady);
+              document.attachEvent("onWeixinJSBridgeReady", onWxBridgeReady);
+          }
+      }else{
+          onWxBridgeReady();
+      }
+  </script>
+  </body>
 </html>

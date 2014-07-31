@@ -1,0 +1,339 @@
+div,p,a,span,body,dl,dt,dd,header,footer,img,section,time,h2,em,article,h3,h4,ul,li,label,ol,h5,i,var{
+    word-wrap:break-word;
+    word-break:break-all;
+    margin:0;
+    padding:0;
+    border:0;
+    list-style:none;
+    outline: none;
+    font-style: normal;
+}
+body,td,input,textarea,option,select,button{
+    -webkit-text-size-adjust: none;
+}
+html,body{
+    height: 100%;
+}
+*{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body{
+    color: #121212;
+    font-size:12px;
+    line-height: 1.2;
+    overflow-x: hidden;
+    font-family: 'Microsoft YaHei Light',"微软雅黑","宋体",Arial;
+}
+a{
+    color:#121212;
+    text-decoration: none;
+}
+ul,li,ol {
+    list-style:none;
+}
+a,a:link,a:visited,a:hover{
+    text-decoration: none;
+}
+a:hover{
+}
+a img,
+img {
+    border: none;
+}
+#wrapper{
+    width: 100%;
+    height:100% ;
+}
+#front{
+    width: 100%;
+    height: 100%;
+    background:url("../images/back.jpg") center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 2;
+}
+#end{
+    width: 100%;
+    height: 100%;
+    background:url("../images/backt.jpg") center center no-repeat;
+    background-size: cover;
+    position: fixed;
+    z-index: 1;
+}
+.transition{
+    -webkit-transition : all 0.5s ease-in 0s;
+}
+.next{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -30px;
+    width: 60px;
+    height: 86px;
+}
+.anid{
+    -webkit-animation : floatd 1.5s linear 0s infinite;
+}
+.aniu{
+    -webkit-animation : floatu 1.5s linear 0s infinite;
+}
+@-webkit-keyframes floatd{
+    0%{
+        -webkit-transform: translate(0,-10px);
+    }
+    50%{
+        -webkit-transform: translate(0,0px);
+    }
+    100%{
+        -webkit-transform: translate(0,-10px);
+    }
+}
+@-webkit-keyframes floatu{
+    0%{
+        -webkit-transform: translate(0,10px);
+    }
+    50%{
+        -webkit-transform: translate(0,0px);
+    }
+    100%{
+        -webkit-transform: translate(0,10px);
+    }
+}
+
+.content{
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+.up{
+    position: absolute;
+    left: 50%;
+    margin-left: -16px;
+    width: 33px;
+    height: 23px;
+}
+.up img{
+    width: 100%;
+}
+.top{
+    margin: 60px auto 14px;
+    text-align: center;
+}
+.circle{
+    width: 110px;
+    height: 110px;
+    -webkit-transform: translate(-200px,0)
+}
+.date{
+    width: 132px;
+    height: 75px;
+    margin: 17px 0;
+    -webkit-transform: translate(200px,0)
+}
+.hotel{
+    font-size: 28px;
+}
+.address{
+    margin: 9px 0 23px;
+}
+.prize{
+    font-size: 16px;
+}
+.join{
+    width:60px;
+    height:60px;
+    line-height: 60px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    background-color: rgb(169,121,192);
+    border-radius: 50%;
+    margin: 30px auto 0;
+}
+.water{
+    position:absolute;
+    width:60px;
+    height:60px;
+    left:50%;
+    margin-left:-30px;
+    margin-top: -60px;
+    z-index: -1;
+}
+.water div{
+    position:absolute;
+    width:100%;
+    height:100%;
+    border:1px solid rgba(255,255,255,.5);
+    border-radius:100%;
+    -webkit-transform:scale(1,1);
+}
+.water div:nth-child(1){
+    -webkit-animation:waterAni 3s linear 0s infinite;
+}
+.water div:nth-child(2){
+    -webkit-animation:waterAni 3s linear 0.75s infinite;
+}
+.water div:nth-child(3){
+    -webkit-animation:waterAni 3s linear 1.5s infinite;
+}
+.water div:nth-child(4){
+    -webkit-animation:waterAni 3s linear 2.25s infinite;
+}
+@-webkit-keyframes waterAni{
+    0%{-webkit-transform:scale(1,1);opacity:1;}
+    100%{-webkit-transform:scale(2,2);opacity:0;}
+}
+.form{
+    display: none;
+    width: 190px;
+    position: absolute;
+    left: 50%;
+    margin:113px 0 0 -95px;
+}
+.form label{
+    color: white;
+    font-size: 16px;
+    margin: 3% 0;
+    display: block;
+}
+.form input,.form textarea{
+    display: inline-block;
+    width: 180px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.3);
+    padding: 0 5px;
+    font-size: 1rem ;
+    color: white;
+}
+.form input{
+    height: 32px;
+}
+.form button{
+    display: inline-block;
+    border: none;
+    background-color: rgb(204,114,241);
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    margin-top: 15%;
+    height: 40px;
+    border-radius: 5px;
+}
+.close{
+    background: url(../images/x.png) 0 0 no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: 100% 100%;
+    position: absolute;
+    top: -30%;
+    right:-10%;
+}
+.detail {
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom:0;
+}
+.circle,.date,.hotel,.address,.prizeframe,.join,.water,.prize{
+    -webkit-transition: all 0.5s linear 0s ;
+    opacity: 0;
+}
+.circle,.date{
+    opacity: 1;
+}
+.scale0{
+    -webkit-transform : scale(2,2);
+    opacity: 0.2;
+}
+.opacity0{
+    opacity: 1;
+}
+.transform0{
+    -webkit-transform : translate(0,0);
+}
+/*success*/
+.mapup{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-transition:all 1s linear 0s;
+    text-align: center;
+}
+.body-success{
+    width: 100%;
+    height: 100%;
+    background:url(../images/backt.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+.titles{
+    width: 60px;
+    height: 55px;
+    margin: 32px 0 33px 0;
+}
+.body-success p{
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+.body-success p.one{
+    font-size: 22px;
+    margin-bottom: 9px;
+}
+.body-success .time{
+    margin: 69px 0 18px;
+}
+.phone{
+    margin: 10px 0;
+}
+#map{
+    width: 100%;
+    height: 50%;
+    display: none;
+    background-color: white;
+}
+.eight{
+    margin-top: 20px;
+}
+.map1{
+    top:50%;
+}
+
+@media (max-height: 430px) {
+    .top {
+        margin: 20px auto 10px;
+    }
+    .address {
+        margin: 9px 0 10px;
+    }
+    .titles{
+        margin: 20px 0;
+    }
+    .body-success .time {
+        margin: 15px 0;
+    }
+}
+@media (min-width: 360px){
+    body{
+        font-size: 16px;
+    }
+    .hotel{
+        font-size: 40px;
+    }
+    .form{
+        width: 230px;
+        margin: 113px 0 0 -115px;
+    }
+    .form input, .form textarea{
+        width: 220px;
+        margin-bottom: 15px;
+    }
+    .body-success p.one{
+        font-size: 26px;
+    }
+    .body-success p{
+        font-size: 16px;
+    }
+}
